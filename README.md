@@ -4,16 +4,6 @@ CI4 SmartJob is a job seeker and employment management system built with CodeIgn
 
 This repository is prepared for HR or technical reviewers as the primary review package. A Railway live demo can be added later, but the project can be evaluated from the source code, setup guide, screenshots, and workflow below.
 
-## Live Demo
-
-Live demo is being configured. Please use the local setup instructions below to run the application.
-
-When Railway deployment is ready, replace this line with:
-
-```text
-https://your-app-name.railway.app/
-```
-
 ## Main Features
 
 - Staff login with demo administrator and staff accounts
@@ -40,18 +30,13 @@ https://your-app-name.railway.app/
 
 Two public screenshots are included. Add the remaining logged-in screenshots after running the database migrations and seeders locally.
 
-![Login screen](docs/screenshots/01-login.png)
 
 ![Public home screen](docs/screenshots/02-public-home.png)
 
-| Screen | Suggested file | Purpose |
-| --- | --- | --- |
-| Login | `docs/screenshots/01-login.png` | Included |
-| Public home | `docs/screenshots/02-public-home.png` | Included |
-| Dashboard | `docs/screenshots/03-dashboard.png` | Add after login |
-| Applicant list/profile | `docs/screenshots/04-applicants.png` | Add after login |
-| Company management | `docs/screenshots/05-companies.png` | Add after login |
-| Resume PDF/export | `docs/screenshots/06-resume-pdf.png` | Add after applicant data exists |
+<img width="1919" height="940" alt="image" src="https://github.com/user-attachments/assets/d95fd72b-95e8-4653-a191-5fc68836696e" />
+<img width="1917" height="946" alt="image" src="https://github.com/user-attachments/assets/aa2aaa06-bad4-46e4-8b06-fa058d14ebf4" />
+<img width="1919" height="946" alt="image" src="https://github.com/user-attachments/assets/12adcd74-13ee-43ec-bf1d-2516bf87214b" />
+<img width="1919" height="948" alt="image" src="https://github.com/user-attachments/assets/d7b222a0-ea06-4d4c-9ce7-890c51f18223" />
 
 ## Local Installation
 
