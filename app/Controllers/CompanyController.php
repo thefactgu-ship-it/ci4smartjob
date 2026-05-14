@@ -151,13 +151,13 @@ class CompanyController extends BaseController
             return redirect()->to('/company/coppy_list')->with('error', 'ไม่พบผู้สมัครที่เลือก');
         }
 
-        $data['selectedApplicants'] = $personalModel->whereIn('id', $selectedIdsArray)->findAll();
+        $data['selectedApplicants'] = $personalModel->whereIn('personal_id', $selectedIdsArray)->findAll();
         $data['companyInfo'] = $companyModel->find($company_id);
         $data['selectedIds'] = $selectedIds;
 
         // ดึงข้อมูลประวัติการทำงาน
         foreach ($data['selectedApplicants'] as &$applicant) {
-            $applicant['jobHistory'] = $jobHistoryModel->where('personal_id', $applicant['id'])->findAll();
+            $applicant['jobHistory'] = $jobHistoryModel->where('personal_id', $applicant['personal_id'])->findAll();
         }
 
         return view('home/summary', $data);

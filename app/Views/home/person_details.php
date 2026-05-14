@@ -107,7 +107,7 @@
         </div>
         <!-- Add Card Footer for Button -->
         <div class="card-footer text-right">
-            <form action="<?= base_url('home/updateStatus/' . $user['id']) ?>" method="post">
+            <form action="<?= base_url('home/updateStatus/' . ($user['personal_id'] ?? $user['id'])) ?>" method="post">
                 <button type="submit" class="btn btn-success">ดำเนินการสำเร็จ</button>
             </form>
         </div>

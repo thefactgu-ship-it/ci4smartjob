@@ -10,7 +10,7 @@
 
     // ฟังก์ชันที่จะดึงสถานะจากเซิร์ฟเวอร์
     function fetchStatus() {
-        var personalId = "<?= $personal['id'] ?>"; // ใช้ personalId แทน queue_ref
+        var personalId = "<?= $personal['personal_id'] ?? $personal['id'] ?>"; // ใช้ personalId แทน queue_ref
 
         axios.get('<?= site_url('user/get-status/') ?>' + personalId)
             .then(function(response) {

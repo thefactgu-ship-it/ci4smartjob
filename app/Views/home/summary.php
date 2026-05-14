@@ -29,8 +29,9 @@
                                 </tr>
                             <?php else : ?>
                                 <?php foreach ($selectedApplicants as $applicant) : ?>
-                                    <tr data-id="<?= esc($applicant['id']) ?>">
-                                        <td><?= esc($applicant['id']) ?></td>
+                                    <?php $personalId = $applicant['personal_id'] ?? $applicant['id'] ?? null; ?>
+                                    <tr data-id="<?= esc($personalId) ?>">
+                                        <td><?= esc($personalId) ?></td>
                                         <td><?= esc($applicant['first_name']) ?> <?= esc($applicant['last_name']) ?></td>
                                         <td>
                                             <?php if (empty($applicant['jobHistory'])) : ?>

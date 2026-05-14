@@ -64,7 +64,8 @@
                   <div id="alertList">
                       <?php if (!empty($alerts)): ?>
                           <?php foreach ($alerts as $alert): ?>
-                              <a class="dropdown-item d-flex align-items-center" href="#" id="alert-<?= $alert['id'] ?>">
+                              <?php $alertId = $alert['personal_id'] ?? $alert['id'] ?? null; ?>
+                              <a class="dropdown-item d-flex align-items-center" href="#" id="alert-<?= esc($alertId) ?>">
                                   <div class="mr-3">
                                       <div class="icon-circle bg-primary">
                                           <i class="fas fa-file-alt text-white"></i>
@@ -75,7 +76,7 @@
                                       <span class="font-weight-bold"><?= $alert['first_name'] ?> <?= $alert['last_name'] ?> has a new alert!</span>
                                   </div>
                                   <!-- ปุ่มปิด -->
-                                  <button class="close" type="button" onclick="closeAlert(<?= $alert['id'] ?>)">
+                                  <button class="close" type="button" onclick="closeAlert(<?= esc($alertId) ?>)">
                                       <span aria-hidden="true">&times;</span>
                                   </button>
                               </a>

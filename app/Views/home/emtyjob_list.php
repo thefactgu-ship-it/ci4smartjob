@@ -23,21 +23,22 @@
                 </thead>
                 <tbody>
                     <?php foreach ($personalInformation as $info): ?>
+                        <?php $personalId = $info['personal_id'] ?? $info['id'] ?? null; ?>
                         <tr>
-                            <td><?= esc($info['id']) ?></td>
+                            <td><?= esc($personalId) ?></td>
                             <td><?= esc($info['first_name']) ?> <?= esc($info['last_name']) ?></td>
                             <td><?= esc($info['queue_ref']) ?></td>
                             <td><?= esc($info['queue_status']) ?></td>
                             <td><?= esc($info['user_type']) ?></td>
                             <td>
                                 <!-- ปุ่มดำเนินการ -->
-                                <a href="<?= base_url('home/details/' . $info['id']); ?>" class="btn btn-success btn-sm">
+                                <a href="<?= base_url('home/details/' . $personalId); ?>" class="btn btn-success btn-sm">
                                     <i class="fas fa-check"></i> ดำเนินการ
                                 </a>
                                 <a href="javascript:void(0)"
                                     class="btn btn-danger btn-sm delete-button"
-                                    data-id="<?= esc($info['id']) ?>"
-                                    data-url="<?= base_url('home/delete/' . $info['id']) ?>">
+                                    data-id="<?= esc($personalId) ?>"
+                                    data-url="<?= base_url('home/delete/' . $personalId) ?>">
                                     <i class="fas fa-trash-alt"></i> ลบ
                                 </a>
                             </td>
