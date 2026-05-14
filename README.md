@@ -4,8 +4,6 @@ CI4 SmartJob is a job seeker and employment management system built with CodeIgn
 
 This repository is prepared for HR or technical reviewers as the primary review package. A Railway live demo can be added later, but the project can be evaluated from the source code, setup guide, screenshots, and workflow below.
 
-```
-
 ## Main Features
 
 - Staff login with demo administrator and staff accounts
