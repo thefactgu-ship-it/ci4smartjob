@@ -34,14 +34,8 @@ Two public screenshots are included. Add the remaining logged-in screenshots aft
 
 ![Public home screen](docs/screenshots/02-public-home.png)
 
-| Screen | Suggested file | Purpose |
-| --- | --- | --- |
-| Login | `docs/screenshots/01-login.png` | Included |
-| Public home | `docs/screenshots/02-public-home.png` | Included |
-| Dashboard | `docs/screenshots/03-dashboard.png` | Add after login |
-| Applicant list/profile | `docs/screenshots/04-applicants.png` | Add after login |
-| Company management | `docs/screenshots/05-companies.png` | Add after login |
-| Resume PDF/export | `docs/screenshots/06-resume-pdf.png` | Add after applicant data exists |
+<img width="1919" height="940" alt="image" src="https://github.com/user-attachments/assets/d95fd72b-95e8-4653-a191-5fc68836696e" />
+<img width="1919" height="948" alt="image" src="https://github.com/user-attachments/assets/d7b222a0-ea06-4d4c-9ce7-890c51f18223" />
 
 ## Local Installation
 
