@@ -1,2 +1,2 @@
-web: vendor/bin/php-server -t public -S 0.0.0.0:$PORT
-release: php spark migrate --all --seed
+web: php -S 0.0.0.0:$PORT -t public
+release: php spark migrate --all && php spark db:seed DatabaseSeeder

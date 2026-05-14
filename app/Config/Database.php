@@ -26,10 +26,10 @@ class Database extends Config
      */
     public $default = [
         'DSN'      => env('database.default.DSN', ''),
-        'hostname' => env('database.default.hostname', 'localhost'),
-        'username' => env('database.default.username', 'root'),
-        'password' => env('database.default.password', ''),
-        'database' => env('database.default.database', 'ci4smartjob'),
+        'hostname' => env('database.default.hostname', env('MYSQLHOST', 'localhost')),
+        'username' => env('database.default.username', env('MYSQLUSER', 'root')),
+        'password' => env('database.default.password', env('MYSQLPASSWORD', '')),
+        'database' => env('database.default.database', env('MYSQLDATABASE', 'ci4smartjob')),
         'DBDriver' => env('database.default.DBDriver', 'MySQLi'),
         'DBPrefix' => env('database.default.DBPrefix', ''),
         'pConnect' => false,
@@ -43,7 +43,7 @@ class Database extends Config
         'compress' => false,
         'strictOn' => false,
         'failover' => [],
-        'port'     => (int) env('database.default.port', 3306),
+        'port'     => (int) env('database.default.port', env('MYSQLPORT', 3306)),
     ];
     
 
