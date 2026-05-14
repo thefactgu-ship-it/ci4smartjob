@@ -222,7 +222,7 @@ class CompanyController extends BaseController
     {
         $email = \Config\Services::email();
 
-        $email->setFrom('krabidoe2014@gmail.com', 'SmartJob System');
+        $email->setFrom(env('EMAIL_FROM', 'no-reply@example.com'), env('EMAIL_FROM_NAME', 'SmartJob System'));
         $email->setTo($toEmail);
 
         $subject = 'แจ้งเตือน: คุณถูกเลือกโดยนายจ้าง!';

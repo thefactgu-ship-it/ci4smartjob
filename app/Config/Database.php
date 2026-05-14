@@ -25,13 +25,13 @@ class Database extends Config
      * @var array<string, mixed>
      */
     public $default = [
-        'DSN'      => env('database.default.DSN', ''),
-        'hostname' => env('database.default.hostname', env('MYSQLHOST', 'localhost')),
-        'username' => env('database.default.username', env('MYSQLUSER', 'root')),
-        'password' => env('database.default.password', env('MYSQLPASSWORD', '')),
-        'database' => env('database.default.database', env('MYSQLDATABASE', 'ci4smartjob')),
-        'DBDriver' => env('database.default.DBDriver', 'MySQLi'),
-        'DBPrefix' => env('database.default.DBPrefix', ''),
+        'DSN'      => '',
+        'hostname' => 'localhost',
+        'username' => 'root',
+        'password' => '',
+        'database' => 'ci4smartjob',
+        'DBDriver' => 'MySQLi',
+        'DBPrefix' => '',
         'pConnect' => false,
         'DBDebug'  => (ENVIRONMENT !== 'production'),
         'cacheOn'  => false,
@@ -43,7 +43,7 @@ class Database extends Config
         'compress' => false,
         'strictOn' => false,
         'failover' => [],
-        'port'     => (int) env('database.default.port', env('MYSQLPORT', 3306)),
+        'port'     => 3306,
     ];
     
 
@@ -187,6 +187,15 @@ class Database extends Config
     public function __construct()
     {
         parent::__construct();
+
+        $this->default['DSN']      = env('database.default.DSN', '');
+        $this->default['hostname'] = env('database.default.hostname', env('MYSQLHOST', 'localhost'));
+        $this->default['username'] = env('database.default.username', env('MYSQLUSER', 'root'));
+        $this->default['password'] = env('database.default.password', env('MYSQLPASSWORD', ''));
+        $this->default['database'] = env('database.default.database', env('MYSQLDATABASE', 'ci4smartjob'));
+        $this->default['DBDriver'] = env('database.default.DBDriver', 'MySQLi');
+        $this->default['DBPrefix'] = env('database.default.DBPrefix', '');
+        $this->default['port']     = (int) env('database.default.port', env('MYSQLPORT', 3306));
 
         // Ensure that we always set the database group to 'tests' if
         // we are currently running an automated test suite, so that

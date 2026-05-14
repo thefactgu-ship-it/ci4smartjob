@@ -11,8 +11,8 @@ class EmailController extends Controller
     {
         $email = \Config\Services::email();
 
-        $email->setTo('krabidoe2014@gmail.com');
-        $email->setFrom(env('EMAIL_FROM'), env('EMAIL_FROM_NAME'));
+        $email->setTo(env('EMAIL_TEST_TO', env('EMAIL_FROM', 'no-reply@example.com')));
+        $email->setFrom(env('EMAIL_FROM', 'no-reply@example.com'), env('EMAIL_FROM_NAME', 'SmartJob System'));
         $email->setSubject('ทดสอบการส่ง Email ผ่าน Gmail SMTP');
         $email->setMessage('<h3>ทดสอบส่งอีเมลจาก CodeIgniter 4 ผ่าน Gmail SMTP สำเร็จ!</h3>');
 

@@ -17,6 +17,8 @@ writable/session/*
 !writable/logs/.gitkeep
 !writable/session/.gitkeep
 public/vendor/
+public/uploads/*
+!public/uploads/default-profile.png
 composer.lock
 *.log
 .php-cs-fixer.cache
