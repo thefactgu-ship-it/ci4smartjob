@@ -61,7 +61,7 @@ $pdf->AddFont('sarabun', '', 'THSarabun.php');
 
         // Set position: X = 10.3 cm, Y = 2.5 cm
         $pdf->SetXY(10.1 * 10, 2.4 * 10);  // หน่วยเป็นเซ็นติเมตร
-        $pdf->Cell(0, 5, iconv('utf-8', 'cp874', 'สำนักงานจัดหางานจังหวัดกระบี่'), 0, 1, 'L');
+        $pdf->Cell(0, 5, iconv('utf-8', 'cp874', 'SmartJob Demo'), 0, 1, 'L');
 
         // Get current date in Thai format (e.g., 25 ธันวาคม 2567)
         setlocale(LC_TIME, 'th_TH.UTF-8');  // Set the locale to Thai

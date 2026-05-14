@@ -35,8 +35,8 @@ class PdfController extends BaseController
         // สร้าง PDF
         $pdf = new TCPDF('P', PDF_UNIT, 'A4', true, 'UTF-8', false);
         $pdf->SetCreator(PDF_CREATOR);
-        $pdf->SetAuthor('SAM');
-        $pdf->SetTitle('Resume Example');
+        $pdf->SetAuthor('SmartJob Demo');
+        $pdf->SetTitle('Resume');
         $pdf->SetMargins(10, 10, 10);
         $pdf->SetAutoPageBreak(TRUE, 10);
         $pdf->AddPage();
@@ -67,8 +67,6 @@ class PdfController extends BaseController
         $imagePath = FCPATH . 'uploads/' . $profilePic;
 
         // โลโก้ที่มุมขวาด้านบน
-        $logoPath = FCPATH . 'uploads/doe-logo.png'; // เปลี่ยนเป็น path ของโลโก้ที่คุณต้องการใช้
-        $pdf->Image($logoPath, 175, 10, 20, 20, 'PNG', '', '', false, 150, '', false, false, 0, false, false, false);
 
         // ตรวจสอบว่ามีรูปโปรไฟล์หรือไม่
         if (file_exists($imagePath) && !empty($profilePic)) {
