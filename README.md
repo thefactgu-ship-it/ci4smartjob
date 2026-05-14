@@ -30,11 +30,12 @@ This repository is prepared for HR or technical reviewers as the primary review 
 
 Two public screenshots are included. Add the remaining logged-in screenshots after running the database migrations and seeders locally.
 
-![Login screen](docs/screenshots/01-login.png)
 
 ![Public home screen](docs/screenshots/02-public-home.png)
 
 <img width="1919" height="940" alt="image" src="https://github.com/user-attachments/assets/d95fd72b-95e8-4653-a191-5fc68836696e" />
+<img width="1917" height="946" alt="image" src="https://github.com/user-attachments/assets/aa2aaa06-bad4-46e4-8b06-fa058d14ebf4" />
+<img width="1919" height="946" alt="image" src="https://github.com/user-attachments/assets/12adcd74-13ee-43ec-bf1d-2516bf87214b" />
 <img width="1919" height="948" alt="image" src="https://github.com/user-attachments/assets/d7b222a0-ea06-4d4c-9ce7-890c51f18223" />
 
 ## Local Installation
