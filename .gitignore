@@ -1,0 +1,22 @@
+# These files should never be versioned
+.DS_Store
+.vscode
+.idea
+.env
+.env.*.php
+vendor/
+node_modules/
+writable/uploads/*
+writable/cache/*
+writable/debugbar/*
+writable/logs/*
+writable/session/*
+!writable/uploads/.gitkeep
+!writable/cache/.gitkeep
+!writable/debugbar/.gitkeep
+!writable/logs/.gitkeep
+!writable/session/.gitkeep
+public/vendor/
+composer.lock
+*.log
+.php-cs-fixer.cache

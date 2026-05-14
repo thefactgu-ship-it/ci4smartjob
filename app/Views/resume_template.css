@@ -1,0 +1,25 @@
+.header {
+    background-color: #00796b;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.content {
+    margin-top: 15px;
+    font-size: 12px;
+}
+.section-title {
+    color: #00796b;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+td {
+    padding: 5px;
+    vertical-align: top;
+}
